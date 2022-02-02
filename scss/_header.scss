@@ -1,0 +1,30 @@
+.header {
+  background-color: $darkBlue;
+  padding: 2.35rem;
+  border-radius: 0.625rem;
+  border-top-right-radius: 6.5rem;
+}
+
+.header-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+  height: 3.125rem;
+  width: 11.25rem;
+  margin-top: 1.875rem;
+
+  .image-container {
+    background-color: $veryDarkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .header {
+    width: 21.93rem;
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,106 @@
+.used-storage {
+  background-color: $darkBlue;
+  padding: 2.35rem;
+  padding-bottom: 3rem;
+  border-radius: 0.625rem;
+  margin-top: 1rem;
+  text-align: center;
+  position: relative;
+}
+.text {
+  opacity: 0.6;
+  span {
+    font-weight: bold;
+  }
+}
+
+.range-input {
+  display: flex;
+  align-items: center;
+  background: $veryDarkBlue;
+  height: 1.1rem;
+  padding-left: 0.1rem;
+  border-radius: 5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: $gradient;
+    height: 0.9rem;
+    width: 80%;
+    padding-right: 0.1rem;
+    border-radius: 5rem;
+  }
+
+  .circle {
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: white;
+    border-radius: 5rem;
+  }
+}
+.gb-numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.left-gb {
+  background-color: white;
+  color: $grayishBlue;
+  display: flex;
+  align-items: center;
+  width: 11.7rem;
+  padding: 0.7rem 1.45rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  span {
+    color: $veryDarkBlue;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-right: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .used-storage {
+    width: 33.875rem;
+    padding: 2rem;
+    text-align: left;
+  }
+  .left-gb {
+    width: 11.7rem;
+    padding: 0.7rem 1.45rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 9.8125rem;
+    left: 76%;
+    transform: translate(-50%, 50%);
+  }
+
+  .left-gb::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 23px;
+    bottom: -19px;
+    right: 0px;
+    border-top: 24px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 19px solid white;
+  }
+}

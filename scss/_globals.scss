@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.875rem;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  background: url("../images/bg-mobile.png");
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  min-width: 20.44rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    background: hsl(229, 57%, 11%);
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: 128%;
+    background-size: 100%;
+  }
+  .container {
+    display: flex;
+    align-items: flex-end;
+  }
+}
